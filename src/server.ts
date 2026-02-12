@@ -8,18 +8,6 @@ const port = 8000
 
 app.use(cors())
 
-app.get("/api/:id", (req: Request, res: Response): void => {
-  const { id } = req.params
-  if (id) {
-    const filteredData = chocolateMilkList.find(
-      (item) => item.id === Number(id)
-    )
-    res.json(filteredData)
-  } else {
-    res.status(404).json({ message: "ID not found" })
-  }
-})
-
 app.get("/api", (req: Request, res: Response): void => {
   const { countryOfOrigin } = req.query
   if (countryOfOrigin) {
@@ -31,6 +19,18 @@ app.get("/api", (req: Request, res: Response): void => {
     res.json(filteredData)
   } else {
     res.json(chocolateMilkList)
+  }
+})
+
+app.get("/api/:id", (req: Request, res: Response): void => {
+  const { id } = req.params
+  if (id) {
+    const filteredData = chocolateMilkList.find(
+      (item) => item.id === Number(id)
+    )
+    res.json(filteredData)
+  } else {
+    res.status(404).json({ message: "ID not found" })
   }
 })
 
