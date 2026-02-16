@@ -9,7 +9,28 @@ const port = 8000
 app.use(cors())
 
 app.get("/api", (req: Request, res: Response): void => {
+  const { countryOfOrigin, rating } = req.query
+
+  if (rating) {
+    const filteredData = chocolateMilkList.filter(
+      (item) => item.rating === Number(rating)
+    )
+    res.json(filteredData)
+  } else if (countryOfOrigin) {
+    const filteredData = chocolateMilkList.filter(
+      (item) =>
+        item.countryOfOrigin.toLowerCase() ===
+        countryOfOrigin.toString().toLowerCase()
+    )
+    res.json(filteredData)
+  } else {
+    res.json(chocolateMilkList)
+  }
+})
+
+app.get("/api/country", (req: Request, res: Response): void => {
   const { countryOfOrigin } = req.query
+
   if (countryOfOrigin) {
     const filteredData = chocolateMilkList.filter(
       (item) =>
