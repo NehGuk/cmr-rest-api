@@ -53,7 +53,5 @@ export const getChocolateMilkById = (
       (item) => item.id === Number(id)
     )
     res.json(filteredData)
-  } else {
-    res.status(404).json({ message: "ID not found" })
   }
 }
