@@ -1,59 +1,14 @@
 import express from "express"
-import { Express, Request, Response } from "express"
+import { Express } from "express"
 import cors from "cors"
-import { ChocolateMilk, chocolateMilkList } from "./data/data-sample"
+import { chocolateMilkRouter } from "./routes/routes"
 
 const app: Express = express()
 const port = 8000
 
 app.use(cors())
 
-app.get("/api", (req: Request, res: Response): void => {
-  const { countryOfOrigin, rating } = req.query
-
-  if (rating) {
-    const filteredData = chocolateMilkList.filter(
-      (item) => item.rating === Number(rating)
-    )
-    res.json(filteredData)
-  } else if (countryOfOrigin) {
-    const filteredData = chocolateMilkList.filter(
-      (item) =>
-        item.countryOfOrigin.toLowerCase() ===
-        countryOfOrigin.toString().toLowerCase()
-    )
-    res.json(filteredData)
-  } else {
-    res.json(chocolateMilkList)
-  }
-})
-
-app.get("/api/country", (req: Request, res: Response): void => {
-  const { countryOfOrigin } = req.query
-
-  if (countryOfOrigin) {
-    const filteredData = chocolateMilkList.filter(
-      (item) =>
-        item.countryOfOrigin.toLowerCase() ===
-        countryOfOrigin.toString().toLowerCase()
-    )
-    res.json(filteredData)
-  } else {
-    res.json(chocolateMilkList)
-  }
-})
-
-app.get("/api/:id", (req: Request, res: Response): void => {
-  const { id } = req.params
-  if (id) {
-    const filteredData = chocolateMilkList.find(
-      (item) => item.id === Number(id)
-    )
-    res.json(filteredData)
-  } else {
-    res.status(404).json({ message: "ID not found" })
-  }
-})
+app.use("/api", chocolateMilkRouter)
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" })

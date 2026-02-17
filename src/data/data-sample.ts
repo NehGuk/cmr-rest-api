@@ -3,7 +3,7 @@ export type ChocolateMilk = {
   name: string
   countryOfOrigin: string
   rating: number
-  description: string
+  description?: string
   containsCoffee: boolean
   isHotChocolate: boolean
   image: string
