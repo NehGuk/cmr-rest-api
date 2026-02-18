@@ -1,4 +1,3 @@
-import { parse } from "node:path"
 import { chocolateMilkList } from "../data/data-sample"
 import type { ChocolateMilk } from "../data/data-sample"
 import type { Request, Response } from "express"
@@ -78,18 +77,32 @@ export const getChocolateMilks = (
       })
     }
   }
+  if (filteredData.length === 0) {
+    return res
+      .status(404)
+      .json({ message: "No chocolate milk found with the specified criteria." })
+  }
   res.json(filteredData)
 }
 
 export const getChocolateMilkById = (
   req: Request<{ id: string }>,
   res: Response<ChocolateMilk | { message: string }>
-): void => {
+) => {
   const { id } = req.params
-  if (id) {
-    const filteredData = chocolateMilkList.find(
-      (item) => item.id === Number(id)
-    )
-    res.json(filteredData)
+  const parsedId = Number(id)
+
+  if (isNaN(parsedId) || parsedId <= 0) {
+    return res.status(400).json({ message: "Invalid ID." })
   }
+
+  const foundChocolateMilk = chocolateMilkList.find(
+    (item) => item.id === parsedId
+  )
+
+  if (!foundChocolateMilk) {
+    return res.status(404).json({ message: "Chocolate milk ID not found." })
+  }
+
+  res.json(foundChocolateMilk)
 }
