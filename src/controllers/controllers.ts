@@ -25,6 +25,13 @@ export const getChocolateMilks = (
   }
 
   if (rating) {
+    const ratingNumber: number = Number(rating)
+    if (isNaN(ratingNumber) || ratingNumber < 0 || ratingNumber > 5) {
+      res.status(400).json({
+        message: "Invalid rating. Please provide a value between 0 and 5.",
+      })
+      return
+    }
     filteredData = filteredData.filter((item) => item.rating === Number(rating))
   }
 
