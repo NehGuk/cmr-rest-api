@@ -13,7 +13,7 @@ type ChocolateMilkQueryParams = {
 
 export const getChocolateMilks = (
   req: Request<{}, unknown, {}, ChocolateMilkQueryParams>,
-  res: Response<ChocolateMilk[]>
+  res: Response<ChocolateMilk[] | { message: string }>
 ): void => {
   const { name, countryOfOrigin, rating } = req.query
   let filteredData: ChocolateMilk[] = chocolateMilkList
@@ -40,7 +40,7 @@ export const getChocolateMilks = (
 
 export const getChocolateMilkById = (
   req: Request<{ id: string }>,
-  res: Response
+  res: Response<ChocolateMilk | { message: string }>
 ): void => {
   const { id } = req.params
   if (id) {
