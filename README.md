@@ -4,4 +4,4 @@ There are REST APIs for everything you can think of. Well, almost. This is a RES
 
 ---
 
-<b>Tech stack:<b> Typescript + Node + Express
+**Tech stack:** Typescript + Node + Express
