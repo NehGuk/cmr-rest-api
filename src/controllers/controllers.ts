@@ -1,3 +1,4 @@
+import { parse } from "node:path"
 import { chocolateMilkList } from "../data/data-sample"
 import type { ChocolateMilk } from "../data/data-sample"
 import type { Request, Response } from "express"
@@ -15,7 +16,7 @@ export const getChocolateMilks = (
   req: Request<{}, unknown, {}, ChocolateMilkQueryParams>,
   res: Response<ChocolateMilk[] | { message: string }>
 ) => {
-  const { name, countryOfOrigin, rating } = req.query
+  const { name, countryOfOrigin, rating, containsCoffee } = req.query
   let filteredData: ChocolateMilk[] = [...chocolateMilkList]
 
   if (name) {
@@ -30,23 +31,39 @@ export const getChocolateMilks = (
     }
   }
 
+  if (countryOfOrigin) {
+    const parsedCountryOfOrigin: string = countryOfOrigin.toLowerCase()
+    filteredData = filteredData.filter(
+      (item) => item.countryOfOrigin.toLowerCase() === parsedCountryOfOrigin
+    )
+    if (filteredData.length === 0) {
+      return res.status(404).json({
+        message:
+          "No chocolate milk found with the specified country of origin.",
+      })
+    }
+  }
+
   if (rating) {
     const parsedRating: number = Number(rating)
     if (isNaN(parsedRating) || parsedRating < 0 || parsedRating > 5) {
-      res.status(400).json({
+      return res.status(400).json({
         message: "Invalid rating. Please provide a value between 0 and 5.",
       })
-      return
     }
     filteredData = filteredData.filter((item) => item.rating === parsedRating)
   }
 
-  if (countryOfOrigin) {
+  if (containsCoffee) {
+    const parsedContainsCoffee: boolean = containsCoffee === "true"
     filteredData = filteredData.filter(
-      (item) =>
-        item.countryOfOrigin.toLowerCase() ===
-        countryOfOrigin.toString().toLowerCase()
+      (item) => item.containsCoffee === parsedContainsCoffee
     )
+    if (filteredData.length === 0) {
+      return res.status(404).json({
+        message: "No chocolate milk found with the specified coffee content.",
+      })
+    }
   }
   res.json(filteredData)
 }
