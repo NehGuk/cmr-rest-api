@@ -16,7 +16,7 @@ export const getChocolateMilks = (
   res: Response<ChocolateMilk[] | { message: string }>
 ): void => {
   const { name, countryOfOrigin, rating } = req.query
-  let filteredData: ChocolateMilk[] = chocolateMilkList
+  let filteredData: ChocolateMilk[] = [...chocolateMilkList]
 
   if (name) {
     filteredData = filteredData.filter(
