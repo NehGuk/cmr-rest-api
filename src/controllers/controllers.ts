@@ -20,7 +20,7 @@ export const getChocolateMilks = (
 
   if (name) {
     filteredData = filteredData.filter(
-      (item) => item.name.toLowerCase() === name.toString().toLowerCase()
+      (item) => item.name.toLowerCase() === name.toLowerCase()
     )
   }
 
