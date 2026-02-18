@@ -14,25 +14,31 @@ type ChocolateMilkQueryParams = {
 export const getChocolateMilks = (
   req: Request<{}, unknown, {}, ChocolateMilkQueryParams>,
   res: Response<ChocolateMilk[] | { message: string }>
-): void => {
+) => {
   const { name, countryOfOrigin, rating } = req.query
   let filteredData: ChocolateMilk[] = [...chocolateMilkList]
 
   if (name) {
+    const parsedName: string = name.toLowerCase()
     filteredData = filteredData.filter(
-      (item) => item.name.toLowerCase() === name.toLowerCase()
+      (item) => item.name.toLowerCase() === parsedName
     )
+    if (filteredData.length === 0) {
+      return res
+        .status(404)
+        .json({ message: "No chocolate milk found with the specified name." })
+    }
   }
 
   if (rating) {
-    const ratingNumber: number = Number(rating)
-    if (isNaN(ratingNumber) || ratingNumber < 0 || ratingNumber > 5) {
+    const parsedRating: number = Number(rating)
+    if (isNaN(parsedRating) || parsedRating < 0 || parsedRating > 5) {
       res.status(400).json({
         message: "Invalid rating. Please provide a value between 0 and 5.",
       })
       return
     }
-    filteredData = filteredData.filter((item) => item.rating === Number(rating))
+    filteredData = filteredData.filter((item) => item.rating === parsedRating)
   }
 
   if (countryOfOrigin) {
