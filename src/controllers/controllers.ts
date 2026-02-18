@@ -16,31 +16,26 @@ export const getChocolateMilks = (
   res: Response<ChocolateMilk[]>
 ): void => {
   const { name, countryOfOrigin, rating } = req.query
+  let filteredData: ChocolateMilk[] = chocolateMilkList
 
   if (name) {
-    const filteredData = chocolateMilkList.filter(
+    filteredData = filteredData.filter(
       (item) => item.name.toLowerCase() === name.toString().toLowerCase()
     )
-    res.json(filteredData)
   }
 
   if (rating) {
-    const filteredData = chocolateMilkList.filter(
-      (item) => item.rating === Number(rating)
-    )
-    res.json(filteredData)
+    filteredData = filteredData.filter((item) => item.rating === Number(rating))
   }
 
   if (countryOfOrigin) {
-    const filteredData = chocolateMilkList.filter(
+    filteredData = filteredData.filter(
       (item) =>
         item.countryOfOrigin.toLowerCase() ===
         countryOfOrigin.toString().toLowerCase()
     )
-    res.json(filteredData)
   }
-
-  res.json(chocolateMilkList)
+  res.json(filteredData)
 }
 
 export const getChocolateMilkById = (
