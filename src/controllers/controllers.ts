@@ -16,7 +16,8 @@ export const getChocolateMilks = (
   req: Request<{}, unknown, {}, ChocolateMilkQueryParams>,
   res: Response<ChocolateMilk[] | { message: string }>
 ) => {
-  const { name, countryOfOrigin, rating, containsCoffee } = req.query
+  const { name, countryOfOrigin, rating, containsCoffee, isHotChocolate } =
+    req.query
   let filteredData: ChocolateMilk[] = [...chocolateMilkList]
 
   if (name) {
@@ -62,6 +63,18 @@ export const getChocolateMilks = (
     if (filteredData.length === 0) {
       return res.status(404).json({
         message: "No chocolate milk found with the specified coffee content.",
+      })
+    }
+  }
+
+  if (isHotChocolate) {
+    const parsedIsHotChocolate: boolean = isHotChocolate === "true"
+    filteredData = filteredData.filter(
+      (item) => item.isHotChocolate === parsedIsHotChocolate
+    )
+    if (filteredData.length === 0) {
+      return res.status(404).json({
+        message: "No chocolate milk found with that characteristic.",
       })
     }
   }
