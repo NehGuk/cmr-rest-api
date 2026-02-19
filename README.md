@@ -5,3 +5,29 @@ There are REST APIs for everything you can think of. Well, almost. This is a RES
 ---
 
 **Tech stack:** Typescript + Node + Express
+
+## Live URLs
+
+- List of chocolate milk drinks: https://cmr-rest-api.fly.dev/api
+
+### By query parameters
+
+- `name`
+- `countryOfOrigin`
+- `rating`
+- `containsCoffee`
+- `isHotChocolate`
+
+Examples:
+
+- https://cmr-rest-api.fly.dev/api?countryOfOrigin=Denmark
+- https://cmr-rest-api.fly.dev/api?countryOfOrigin=Italy&rating=3
+
+### By ID
+
+- `id`
+
+Examples:
+
+- https://cmr-rest-api.fly.dev/api/1
+- https://cmr-rest-api.fly.dev/api/20
