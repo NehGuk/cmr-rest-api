@@ -4,11 +4,11 @@ There are REST APIs for everything you can think of. Well, almost. This is a RES
 
 **Tech stack:** Typescript + Node + Express
 
-## Live URLs
+## Full list of chocolate milk drinks
 
-- List of chocolate milk drinks: https://cmr-rest-api.fly.dev/api
+- https://cmr-rest-api.fly.dev/api
 
-### By query parameters
+### Filter by query parameters
 
 - `name`
 - `countryOfOrigin`
@@ -16,16 +16,16 @@ There are REST APIs for everything you can think of. Well, almost. This is a RES
 - `containsCoffee`
 - `isHotChocolate`
 
-Examples:
+For example:
 
 - https://cmr-rest-api.fly.dev/api?countryOfOrigin=Denmark
 - https://cmr-rest-api.fly.dev/api?countryOfOrigin=Italy&rating=3
 
-### By ID
+### Filter by ID
 
 - `id`
 
-Examples:
+For example:
 
 - https://cmr-rest-api.fly.dev/api/1
 - https://cmr-rest-api.fly.dev/api/20
