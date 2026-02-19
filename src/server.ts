@@ -4,7 +4,7 @@ import cors from "cors"
 import { chocolateMilkRouter } from "./routes/routes"
 
 const app: Express = express()
-const port = 8000
+const port = process.env.PORT || 3000
 
 app.use(cors())
 
