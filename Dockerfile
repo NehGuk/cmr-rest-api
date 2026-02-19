@@ -1,21 +1,27 @@
 FROM node:18-alpine
 
+# Install pnpm globally
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 WORKDIR /app
 
 # Copy package files
-COPY package.json package-lock.json* ./
+COPY pnpm-lock.yaml package.json ./
 
-# Install dependencies with npm
-RUN npm install
+# Install dependencies with pnpm
+RUN pnpm install --frozen-lockfile
 
 # Copy source code
 COPY . .
 
 # Build TypeScript
-RUN npm run build
+RUN pnpm run build
+
+# Remove dev dependencies for production
+RUN pnpm prune --prod
 
 # Expose port
-EXPOSE 3000
+EXPOSE 8080
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]
