@@ -24,11 +24,6 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter(
       (item) => item.name.toLowerCase() === parsedName
     )
-    if (filteredData.length === 0) {
-      return res
-        .status(404)
-        .json({ message: "No chocolate milk found with the specified name." })
-    }
   }
 
   if (countryOfOrigin) {
@@ -36,21 +31,10 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter(
       (item) => item.countryOfOrigin.toLowerCase() === parsedCountryOfOrigin
     )
-    if (filteredData.length === 0) {
-      return res.status(404).json({
-        message:
-          "No chocolate milk found with the specified country of origin.",
-      })
-    }
   }
 
   if (rating) {
     const parsedRating: number = Number(rating)
-    if (isNaN(parsedRating) || parsedRating < 0 || parsedRating > 5) {
-      return res.status(400).json({
-        message: "Invalid rating. Please provide a value between 0 and 5.",
-      })
-    }
     filteredData = filteredData.filter((item) => item.rating === parsedRating)
   }
 
@@ -59,6 +43,7 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter(
       (item) => item.containsCoffee === parsedContainsCoffee
     )
+
     if (filteredData.length === 0) {
       return res.status(404).json({
         message: "No chocolate milk found with the specified coffee content.",
@@ -71,12 +56,8 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter(
       (item) => item.isHotChocolate === parsedIsHotChocolate
     )
-    if (filteredData.length === 0) {
-      return res.status(404).json({
-        message: "No chocolate milk found with that characteristic.",
-      })
-    }
   }
+
   if (filteredData.length === 0) {
     return res
       .status(404)
@@ -91,11 +72,6 @@ export const getChocolateMilkById = (
 ) => {
   const { id } = req.params
   const parsedId = Number(id)
-
-  if (isNaN(parsedId) || parsedId <= 0) {
-    return res.status(400).json({ message: "Invalid ID." })
-  }
-
   const foundChocolateMilk = chocolateMilkList.find(
     (item) => item.id === parsedId
   )
