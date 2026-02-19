@@ -1,26 +1,27 @@
 {
-  "name": "Chocolate Milk Review REST API",
+  "name": "chocolate-milk-review-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts"
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "typescript": "^5.3.3",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.2",
+    "@types/cors": "^2.8.19"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.6",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.2.2",
-    "typescript": "^5.9.3"
+    "tsx": "^4.7.0"
   }
 }

@@ -4,7 +4,7 @@ import cors from "cors"
 import { chocolateMilkRouter } from "./routes/routes"
 
 const app: Express = express()
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 
 app.use(cors())
 
@@ -14,6 +14,6 @@ app.use((req, res) => {
   res.status(404).json({ message: "Not found" })
 })
 
-app.listen(port, (): void => {
-  console.log(`Hey! Server up and running on port ${port}.`)
+app.listen(PORT, (): void => {
+  console.log(`Hey! Server up and running on port ${PORT}.`)
 })
