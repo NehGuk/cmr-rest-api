@@ -1,0 +1,14 @@
+# flyctl launch added from .gitignore
+# OS junk
+**/.DS_Store
+
+# Dependencies
+**/node_modules
+
+# Build output
+**/dist
+
+# Env files
+**/.env
+fly.toml
+
