@@ -43,12 +43,6 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter(
       (item) => item.containsCoffee === parsedContainsCoffee
     )
-
-    if (filteredData.length === 0) {
-      return res.status(404).json({
-        message: "No chocolate milk found with the specified coffee content.",
-      })
-    }
   }
 
   if (isHotChocolate) {
@@ -59,10 +53,11 @@ export const getChocolateMilks = (
   }
 
   if (filteredData.length === 0) {
-    return res
-      .status(404)
-      .json({ message: "No chocolate milk found with the specified criteria." })
+    return res.status(404).json({
+      message: "No chocolate milk found matching the provided criteria.",
+    })
   }
+
   res.json(filteredData)
 }
 
