@@ -1,6 +1,7 @@
 import express from "express"
 import { Express } from "express"
 import cors from "cors"
+import helmet from "helmet"
 import { chocolateMilkRouter } from "./routes/routes"
 import {
   apiRateLimiterMiddleware,
@@ -12,6 +13,7 @@ const PORT = process.env.PORT || 8080
 
 app.use(cors())
 app.use(express.json())
+app.use(helmet())
 app.use(rateLimiterMiddleware)
 
 app.use("/api", apiRateLimiterMiddleware, chocolateMilkRouter)
