@@ -247,4 +247,16 @@ export let chocolateMilkList = [
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576987/q5xy0objglrspvjevsp9.jpg",
   },
+  {
+    id: 21,
+    name: "Três Corações Capuccino Chocolate",
+    countryOfOrigin: "Brazil",
+    rating: 5,
+    description:
+      "Bom pacas! That's a Portuguese slang that means 'damn good'. It's a shame that I cannot find this drink outside Brazil. I must say it's a bit too sweet, though. Not perfect. But it's one of my favourites nevertheless!",
+    containsCoffee: true,
+    isHotChocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576907/irealhyt3nhjgs5tzjkf.png",
+  },
 ]
