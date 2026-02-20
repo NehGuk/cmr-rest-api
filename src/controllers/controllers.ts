@@ -1,5 +1,5 @@
-import { chocolateMilkList } from "../data/data-sample"
-import type { ChocolateMilk } from "../data/data-sample"
+import { chocolateMilkList } from "../data/data"
+import type { ChocolateMilk } from "../data/data"
 import type { Request, Response } from "express"
 
 type ChocolateMilkQueryParams = {
