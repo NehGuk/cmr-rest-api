@@ -241,7 +241,7 @@ export let chocolateMilkList = [
     countryOfOrigin: "Switzerland",
     rating: 2,
     description:
-      "A major disappointment, considering the Swiss quality standards. I don't understand how this can be sold in a country known for excellent-quality chocolate.",
+      "A major disappointment, considering Swiss quality standards. I don't understand how this can be sold in a country known for excellent-quality chocolate.",
     containsCoffee: false,
     isHotChocolate: false,
     image:
