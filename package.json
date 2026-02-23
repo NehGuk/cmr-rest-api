@@ -20,6 +20,8 @@
     "express": "^5.2.1",
     "helmet": "^8.1.0",
     "rate-limiter-flexible": "^9.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
