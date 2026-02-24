@@ -4,18 +4,18 @@ import type { Request, Response } from "express"
 
 type ChocolateMilkQueryParams = {
   name?: string
-  countryOfOrigin?: string
+  country_of_origin?: string
   description?: string
   rating?: string
-  containsCoffee?: "true" | "false"
-  isHotChocolate?: "true" | "false"
+  contains_coffee?: "true" | "false"
+  is_hot_chocolate?: "true" | "false"
 }
 
 export const getChocolateMilks = (
   req: Request<{}, unknown, {}, ChocolateMilkQueryParams>,
   res: Response<ChocolateMilk[] | { message: string }>
 ) => {
-  const { name, countryOfOrigin, rating, containsCoffee, isHotChocolate } =
+  const { name, country_of_origin, rating, contains_coffee, is_hot_chocolate } =
     req.query
   let filteredData: ChocolateMilk[] = [...chocolateMilkList]
 
@@ -26,10 +26,10 @@ export const getChocolateMilks = (
     )
   }
 
-  if (countryOfOrigin) {
-    const parsedCountryOfOrigin: string = countryOfOrigin.toLowerCase()
+  if (country_of_origin) {
+    const parsedcountry_of_origin: string = country_of_origin.toLowerCase()
     filteredData = filteredData.filter(
-      (item) => item.countryOfOrigin.toLowerCase() === parsedCountryOfOrigin
+      (item) => item.country_of_origin.toLowerCase() === parsedcountry_of_origin
     )
   }
 
@@ -38,17 +38,17 @@ export const getChocolateMilks = (
     filteredData = filteredData.filter((item) => item.rating === parsedRating)
   }
 
-  if (containsCoffee) {
-    const parsedContainsCoffee: boolean = containsCoffee === "true"
+  if (contains_coffee) {
+    const parsedcontains_coffee: boolean = contains_coffee === "true"
     filteredData = filteredData.filter(
-      (item) => item.containsCoffee === parsedContainsCoffee
+      (item) => item.contains_coffee === parsedcontains_coffee
     )
   }
 
-  if (isHotChocolate) {
-    const parsedIsHotChocolate: boolean = isHotChocolate === "true"
+  if (is_hot_chocolate) {
+    const parsedis_hot_chocolate: boolean = is_hot_chocolate === "true"
     filteredData = filteredData.filter(
-      (item) => item.isHotChocolate === parsedIsHotChocolate
+      (item) => item.is_hot_chocolate === parsedis_hot_chocolate
     )
   }
 

@@ -7,9 +7,9 @@ import {
 import {
   validateRating,
   validateName,
-  validateCountryOfOrigin,
-  validateContainsCoffee,
-  validateIsHotChocolate,
+  validatecountry_of_origin,
+  validatecontains_coffee,
+  validateis_hot_chocolate,
   validateID,
 } from "../middleware/validation"
 
@@ -18,10 +18,10 @@ export const chocolateMilkRouter: Router = express.Router()
 chocolateMilkRouter.get(
   "/",
   validateName,
-  validateCountryOfOrigin,
+  validatecountry_of_origin,
   validateRating,
-  validateContainsCoffee,
-  validateIsHotChocolate,
+  validatecontains_coffee,
+  validateis_hot_chocolate,
   getChocolateMilks
 )
 chocolateMilkRouter.get("/:id", validateID, getChocolateMilkById)

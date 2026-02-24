@@ -25,27 +25,27 @@ export const validateName = (
   next()
 }
 
-export const validateCountryOfOrigin = (
+export const validatecountry_of_origin = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  const { countryOfOrigin } = req.query
+  const { country_of_origin } = req.query
 
-  if (countryOfOrigin !== undefined) {
-    if (typeof countryOfOrigin !== "string") {
+  if (country_of_origin !== undefined) {
+    if (typeof country_of_origin !== "string") {
       return res
         .status(400)
         .json({ message: "Country of origin must be a single string." })
     }
 
-    if (countryOfOrigin.trim() === "") {
+    if (country_of_origin.trim() === "") {
       return res
         .status(400)
         .json({ message: "Country of origin cannot be empty." })
     }
 
-    if (countryOfOrigin.length > 200) {
+    if (country_of_origin.length > 200) {
       return res.status(400).json({
         message: "Country of origin cannot be longer than 200 characters",
       })
@@ -72,32 +72,32 @@ export const validateRating = (
   next()
 }
 
-export const validateContainsCoffee = (
+export const validatecontains_coffee = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  const { containsCoffee } = req.query
-  if (containsCoffee !== undefined) {
-    if (containsCoffee !== "true" && containsCoffee !== "false") {
+  const { contains_coffee } = req.query
+  if (contains_coffee !== undefined) {
+    if (contains_coffee !== "true" && contains_coffee !== "false") {
       return res.status(400).json({
-        message: "Value for containsCoffee must be either 'true' or 'false'.",
+        message: "Value for contains_coffee must be either 'true' or 'false'.",
       })
     }
   }
   next()
 }
 
-export const validateIsHotChocolate = (
+export const validateis_hot_chocolate = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  const { isHotChocolate } = req.query
-  if (isHotChocolate !== undefined) {
-    if (isHotChocolate !== "true" && isHotChocolate !== "false") {
+  const { is_hot_chocolate } = req.query
+  if (is_hot_chocolate !== undefined) {
+    if (is_hot_chocolate !== "true" && is_hot_chocolate !== "false") {
       return res.status(400).json({
-        message: "Value for isHotChocolate must be either 'true' or 'false'.",
+        message: "Value for is_hot_chocolate must be either 'true' or 'false'.",
       })
     }
   }
