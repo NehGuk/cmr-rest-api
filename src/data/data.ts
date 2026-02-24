@@ -173,7 +173,8 @@ export let chocolateMilkList = [
       "What a major disappointment. Nice coffee shop, good atmosphere, pleasant vibe... Just to be ruined by this overly sweet frapuccino.",
     containsCoffee: true,
     isHotChocolate: false,
-    image: "URLLLLLL",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576897/zmmxmyuq8liai6pmzcut.jpg",
   },
   {
     id: 15,
