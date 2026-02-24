@@ -25,5 +25,3 @@ export async function createTable() {
   await db.close()
   console.log("Yayyy! Table created successfully.")
 }
-
-createTable()
