@@ -1,12 +1,8 @@
-import sqlite3 from "sqlite3"
-import { open } from "sqlite"
+import Database from "better-sqlite3"
 import path from "path"
 
 export async function createTable() {
-  const db = await open({
-    filename: path.join("cmr-database.db"),
-    driver: sqlite3.Database,
-  })
+  const db = new Database(path.join("cmr-database.db"))
 
   await db.exec(`
     CREATE TABLE IF NOT EXISTS cmr (
