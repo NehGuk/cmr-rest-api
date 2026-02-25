@@ -54,7 +54,8 @@ export let chocolateMilkList = [
     description: "Absolutely nothing special about this one.",
     contains_coffee: false,
     is_hot_chocolate: false,
-    image: "URLLLLLL",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577062/djphc5wkl1gogwrhxxzn.jpg",
   },
   {
     id: 5,
