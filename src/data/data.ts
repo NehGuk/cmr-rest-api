@@ -120,8 +120,8 @@ export let chocolateMilkList = [
   {
     id: 10,
     name: "Trickling Springs Whole Chocolate Milk",
-    country_of_origin: "COUNTRYYYYY",
-    rating: 11111,
+    country_of_origin: "USA",
+    rating: 3,
     description:
       "Not bad! It was a little expensive, but I don't regret trying it. Finally, an American chocolate drink that I can recommend.",
     contains_coffee: false,

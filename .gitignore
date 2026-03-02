@@ -1,11 +1,24 @@
-# OS junk
-.DS_Store
-
 # Dependencies
 node_modules/
 
 # Build output
 dist/
 
-# Env files
+# Environment variables
 .env
+.env.local
+.env.production
+
+# Database files
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

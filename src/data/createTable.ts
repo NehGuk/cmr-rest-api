@@ -1,6 +1,8 @@
 import Database from "better-sqlite3"
 import path from "node:path"
 
+/* export const db = new Database("cmr.db") */
+
 export function createTable() {
   const db = new Database(path.join("cmr.db"))
 
@@ -8,7 +10,7 @@ export function createTable() {
     CREATE TABLE IF NOT EXISTS cmr (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
-      description TEXT NOT NULL,
+      description TEXT,
       country_of_origin TEXT NOT NULL,
       rating INTEGER NOT NULL CHECK(rating >= 0 AND rating <= 5),
       contains_coffee INTEGER NOT NULL DEFAULT 0,
