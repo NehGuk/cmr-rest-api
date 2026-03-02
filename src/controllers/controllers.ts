@@ -27,9 +27,9 @@ export const getChocolateMilks = (
   }
 
   if (country_of_origin) {
-    const parsedcountry_of_origin: string = country_of_origin.toLowerCase()
+    const parsedCountry_of_origin: string = country_of_origin.toLowerCase()
     filteredData = filteredData.filter(
-      (item) => item.country_of_origin.toLowerCase() === parsedcountry_of_origin
+      (item) => item.country_of_origin.toLowerCase() === parsedCountry_of_origin
     )
   }
 
@@ -39,16 +39,16 @@ export const getChocolateMilks = (
   }
 
   if (contains_coffee) {
-    const parsedcontains_coffee: boolean = contains_coffee === "true"
+    const parsedContains_coffee: boolean = contains_coffee === "true"
     filteredData = filteredData.filter(
-      (item) => item.contains_coffee === parsedcontains_coffee
+      (item) => item.contains_coffee === parsedContains_coffee
     )
   }
 
   if (is_hot_chocolate) {
-    const parsedis_hot_chocolate: boolean = is_hot_chocolate === "true"
+    const parsedIs_hot_chocolate: boolean = is_hot_chocolate === "true"
     filteredData = filteredData.filter(
-      (item) => item.is_hot_chocolate === parsedis_hot_chocolate
+      (item) => item.is_hot_chocolate === parsedIs_hot_chocolate
     )
   }
 
