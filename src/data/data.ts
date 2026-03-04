@@ -261,4 +261,64 @@ export let chocolateMilkList = [
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576907/irealhyt3nhjgs5tzjkf.png",
   },
+  {
+    id: 22,
+    name: "Ehrmann High Protein Chocolate Drink ",
+    country_of_origin: "Germany",
+    rating: 1,
+    description:
+      "Tastes like horse urine. One of the worst chocolate drinks I've tasted recently. Bought this in Lavtia, so I was swearing at the Latvian dairy industry for five minutes, only to realise that this shit actually comes from Germany.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577064/iext2hyynyuuk85ikoq4.jpg",
+  },
+  {
+    id: 23,
+    name: "QNT Protein Delicious Shake",
+    country_of_origin: "Belgium",
+    rating: 1,
+    description:
+      "I get it. Sometimes we have to sacrifice flavour in order to get better nutritional qualities. But sometimes folks go a bit too far. This is just another instance of the industry failing at correctly labelling what they sell. Calling this a 'delicious shake', as the label suggests, is almost a crime.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577064/iext2hyynyuuk85ikoq4.jpg",
+  },
+  {
+    id: 24,
+    name: "Müllermilch Kakao",
+    country_of_origin: "Germany",
+    rating: 2,
+    description:
+      "I've tried Müllermilch before, in Oslo. Didn't like it. But let's give it another go. Maybe here in Gdańsk they taste better? Also, this one says 'kakao' on the label. Could it be a new edition? An improved recipe? More chocolaty? Nope. Wasted my money again.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576920/igm8k77pszzhlsyhbkrd.jpg",
+  },
+  {
+    id: 25,
+    name: "Tine Milkshake Sjokoladesmak",
+    country_of_origin: "Norway",
+    rating: 4,
+    description:
+      "Good stuff! Don't be deceived by the ugly packaging. I really like this one. True, it's a bit sweeter than it should be but it remains as one of the best chocolate drinks I can find here in Norway. Not nearly as good as Cocio, though.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577009/bupfpskk87nbfbpqz00o.jpg",
+  },
+  {
+    id: 26,
+    name: "ProPud Milkshake Capuccino",
+    country_of_origin: "Austria",
+    rating: 4,
+    description:
+      "Excellent! A creamy and filling drink, with a smooth coffee-ish aftertaste that didn't disappoint me. These protein drinks are usually terrible. But this one positively surprised me.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576984/pzmrdalwhw5ntqiovrh0.jpg",
+  },
 ]
