@@ -283,7 +283,7 @@ export let chocolateMilkList = [
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
-      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577064/iext2hyynyuuk85ikoq4.jpg",
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1772620053/znitwe3m90klhd9e5chx.png",
   },
   {
     id: 24,
