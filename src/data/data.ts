@@ -359,11 +359,11 @@ export let chocolateMilkList = [
   },
   {
     id: 30,
-    name: "Steam Kaffe Iskremkaffe",
+    name: "Steam Kaffebar Iskremkaffe",
     country_of_origin: "Norway",
     rating: 5,
     description:
-      "A heavenly experience! This is one of my top favourites of all time. No games here, no fluff, no gimmicks. Just good coffee mixed with great-quality ice cream. This brutal simplicity is what makes this drink so special. I'd recommend either vanilla, chocolate or mint ice cream. Pricy, but totally worth it. Not sure how consistent it is across different shops, though. I used to order it at Steam Kaffee CC Vest, in Oslo.",
+      "A heavenly experience! This is one of my top favourites of all time. No games here, no fluff, no gimmicks. Just good coffee mixed with great-quality ice cream. This brutal simplicity is what makes this drink so special. I'd recommend either vanilla, chocolate or mint ice cream. Pricey, but totally worth it. Not sure how consistent it is across different shops, though. I used to order it at Steam Kaffeebar CC Vest, in Oslo.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
