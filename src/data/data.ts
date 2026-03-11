@@ -321,4 +321,52 @@ export let chocolateMilkList = [
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576984/pzmrdalwhw5ntqiovrh0.jpg",
   },
+  {
+    id: 27,
+    name: "Espresso House Iscapuccino Mocca",
+    country_of_origin: "Sweden",
+    rating: 4,
+    description:
+      "Not bad at all. Most drinks at Espresso House are decent, I think. Not top-notch stuff, but good enough to get me going.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577051/fkr1dfakkmukcjuucpgi.jpg",
+  },
+  {
+    id: 28,
+    name: "Barbells Milkshake Chocolate",
+    country_of_origin: "Sweden",
+    rating: 3,
+    description:
+      "Again, one of those 'functional' drinks. Some extra protein, sure, but at what cost? It tastes like industrial residue. Still, not the worst I've seen. I expected more from the Swedish chocolate milk brands.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577057/u6pzn0771zuaotnw24ks.jpg",
+  },
+  {
+    id: 29,
+    name: "Starbucks White Mocha Frapuccino",
+    country_of_origin: "USA",
+    rating: 5,
+    description:
+      "I first discovered this one when I lived in Rio de Janeiro, in 2013. It has become my favourite Starbucks drink. But here's a crucial detail: it ought to to be ordered with less ice and a double shot of espresso. Otherwise, it can be rather boring.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576968/x3ovj3cquzvvizclpfyf.jpg",
+  },
+  {
+    id: 30,
+    name: "Steam Kaffe Iskremkaffe",
+    country_of_origin: "Norway",
+    rating: 5,
+    description:
+      "A heavenly experience! This is one of my top favourites of all time. No games here, no fluff, no gimmicks. Just good coffee mixed with great-quality ice cream. This brutal simplicity is what makes this drink so special. I'd recommend either vanilla, chocolate or mint ice cream. Pricy, but totally worth it. Not sure how consistent it is across different shops, though. I used to order it at Steam Kaffee CC Vest, in Oslo.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576979/w2pjos1brnmkpm5wsuqz.jpg",
+  },
 ]
