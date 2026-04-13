@@ -11,21 +11,22 @@ There are REST APIs for everything you can think of. Well, almost. This is a RES
 ### Filter by query parameters
 
 - `name`
-- `countryOfOrigin`
+- `country_of_origin`
 - `rating`
-- `containsCoffee`
-- `isHotChocolate`
+- `contains_coffee`
+- `is_hot_chocolate`
 
-For example:
+Examples:
 
-- https://cmr-rest-api.fly.dev/api?countryOfOrigin=Denmark
-- https://cmr-rest-api.fly.dev/api?countryOfOrigin=Italy&rating=3
+- https://cmr-rest-api.fly.dev/api?country_of_origin=Denmark
+- https://cmr-rest-api.fly.dev/api?country_of_origin=usa&rating=0
+- https://cmr-rest-api.fly.dev/api?contains_coffee=true
 
 ### Filter by ID
 
 - `id`
 
-For example:
+Examples:
 
 - https://cmr-rest-api.fly.dev/api/1
 - https://cmr-rest-api.fly.dev/api/20
