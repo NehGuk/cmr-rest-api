@@ -369,4 +369,135 @@ export let chocolateMilkList = [
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576979/w2pjos1brnmkpm5wsuqz.jpg",
   },
+  {
+    id: 31,
+    name: "Alpro Plant Protein",
+    country_of_origin: "Belgium",
+    rating: 1,
+    description: "No taste. This drink does not even deserve a review.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576905/tpjfk5nacezaqfkb3w87.jpg",
+  },
+  {
+    id: 32,
+    name: "Skånemejerier Chokladmjölk",
+    country_of_origin: "Sweden",
+    rating: 4,
+    description:
+      "It reminds me of Litago, from Norway, but a little tastier – not that Litago is great. It does well as a general-purpose chocolate milk. Nothing fancy. It won't make a lasting memory, but it won't disappoint too much either.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577067/bfj1tpicpvlmamprovvt.jpg",
+  },
+  {
+    id: 33,
+    name: "Skånemejerier Fika Chokladmjölk ",
+    country_of_origin: "Sweden",
+    rating: 4,
+    description:
+      "I don't get it. It is basically the same thing as that other Swedish chocolate milk, Skånemejerier Chokladmjölk, produced by the same brand. Why two products that taste exactly the same? Or almost exactly, I'm not sure. Maybe my taste buds were no longer able to tell the difference in the midst of a harsh winter in Stockholm?",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576926/nc3bpivtvkriqufgrufx.jpg",
+  },
+  {
+    id: 33,
+    name: "Pucko",
+    country_of_origin: "Sweden",
+    rating: 5,
+    description:
+      'This got me really confused. A Cocio bottle, with a label that says \"Pucko\"? It tastes exactly like Cocio. Someone told me that this Swedish brand, Pucko, is now produced by the same factory where the Danish champion Cocio is produced. Huh? I\'ll have to do some more research to crack this mystery. What\'s important, though, is that this "Pucko" drink does taste delicious – again, exactly like Cocio. Hence the high score, regardless of branding strategies and regardless of the ever-confusing who-owns-what-where sort of discussion.',
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577035/g2gunnmew2aj1osebma4.jpg",
+  },
+  {
+    id: 34,
+    name: "Pucko Ljus Chokladmjölk",
+    country_of_origin: "Sweden",
+    rating: 3,
+    description:
+      "Although the original Pucko tastes really good, this one, sold in the carton box, disappointed me quite a lot. Why? I have no idea. What I can say is that the proportion of cocoa, milk and sugar in this drink is not what chocolate milk lovers expect.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577003/sfvxqpae2zptnt3ye6zu.jpg",
+  },
+  {
+    id: 35,
+    name: "Milbona Cappuccino Coffee Drink",
+    country_of_origin: "Germany",
+    rating: 5,
+    description:
+      "Impressive. You won't find this very often here in Norway, but if you do go for it. A gentle balance between a pleasant coffee after taste and a silky, creamy, refreshing chocolate milk experience.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576970/ihlmvm6ewv07bnpsblph.jpg",
+  },
+  {
+    id: 36,
+    name: "Yalla Milkshake",
+    country_of_origin: "Sweden",
+    rating: 4,
+    description:
+      "Not too bad. Nice, airy texture – as long as you shake it well before enjoying it. I was told that Yalla is a brand from Sweden, but I was also told that this specific product is produced in Denmark. God knows. It doesn't really matter, I guess, as long as it's a top-quality chocolate milk. Well, this one is not exactly \"top-quality\", but it certainly is good enough.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577013/clllllbgys6mah1ylek1.jpg",
+  },
+  {
+    id: 37,
+    name: "Milbona Espresso Macchiato Coffee Drink",
+    country_of_origin: "Germany",
+    rating: 5,
+    description:
+      "As with the Milbona Cappuccino Coffee Drink, this one is also a top-notch drink. Just the right balance between coffee and chocolate, in a milky, refreshing texture that will surely make you understand why other brands can't catch up. This brand, Milbona, is owned by Lidl, from Germany. Who knows why it is sold all across northern Europe, but not in Norway. Sad news for chocolate milk enthusiasts.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576898/l0qiwjpd4hjy830nqw1j.jpg",
+  },
+  {
+    id: 38,
+    name: "ProPud Coffee Shake Frappé Latte",
+    country_of_origin: "Sweden",
+    rating: 5,
+    description:
+      "Good stuff! Creamy, delicious texture. I'm often disappointed by these Swedish brands, but this drink in particular elevates the reputation of the Swedish chocolate milk industry.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576974/tgzxgcz3xnz5hkhvydgr.jpg",
+  },
+  {
+    id: 39,
+    name: "Naturdiet Creamy Caffe Latte",
+    country_of_origin: "Sweden",
+    rating: 0,
+    description:
+      "By far, the worst drink I've tasted in Sweden – it's on the same range as the worst ones from the US, which is an impressive achievement in a way. You almost have to make a conscious effort to produce something that bad. The production of this crap should be phased out immediately.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577011/zhfxr8v5na1z0hkccgbg.jpg",
+  },
+  {
+    id: 40,
+    name: "Valio Profeel Protein Milkshake Chocolate Flavour",
+    country_of_origin: "Finland",
+    rating: 4,
+    description:
+      "Haven't tried many chocolate milk brands from Finland, as far as I remember. But this one gave me a positive impression! Thick texture, real chocolate taste, no bullshit.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576924/yknolasmyu2u1levyezp.jpg",
+  },
 ]
