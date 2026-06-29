@@ -30,3 +30,7 @@ Examples:
 
 - https://cmr-rest-api.fly.dev/api/1
 - https://cmr-rest-api.fly.dev/api/20
+
+## Deployed frontend
+
+- A sample frontend to display this data has been deployed at https://nehguk.github.io/kodehode-jsa-oppgave-3/index.html.
