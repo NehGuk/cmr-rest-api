@@ -1,6 +1,6 @@
 import Database from "better-sqlite3"
 import path from "node:path"
-import { chocolateMilkList } from "./data"
+import { chocolateMilkList } from "./data.js"
 
 export function seedTable() {
   const db = new Database(path.join("cmr.db"))
