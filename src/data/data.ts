@@ -1,5 +1,5 @@
 export type ChocolateMilk = {
-  id: number
+  id: string
   name: string
   country_of_origin: string
   rating: number
@@ -11,7 +11,7 @@ export type ChocolateMilk = {
 
 export let chocolateMilkList = [
   {
-    id: 1,
+    id: "86df2778-574c-40c0-9038-1ab9df92cdd8",
     name: "Mint Chocolate Milk",
     country_of_origin: "South Korea",
     rating: 5,
@@ -23,7 +23,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576911/a3z9r3athjgtuoyi5rpr.jpg",
   },
   {
-    id: 2,
+    id: "1c9c7a1d-23f1-4bf8-bfbd-f80ce1242215",
     name: "Cocio Dark",
     country_of_origin: "Denmark",
     rating: 5,
@@ -35,7 +35,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577017/vzpqrhqfeuofmnoqwqfs.jpg",
   },
   {
-    id: 3,
+    id: "f4fa576d-fe28-419a-9b4a-0e92d76d7654",
     name: "Taciata",
     country_of_origin: "Poland",
     rating: 3,
@@ -47,7 +47,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577314/r7tmk2eeghgxpl9xnmaa.png",
   },
   {
-    id: 4,
+    id: "fd5ccce8-7e66-4a0c-98d3-1588b4bdc75b",
     name: "Müllermilch",
     country_of_origin: "Germany",
     rating: 2,
@@ -58,7 +58,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577062/djphc5wkl1gogwrhxxzn.jpg",
   },
   {
-    id: 5,
+    id: "0e9ad91b-2d4b-473d-8408-8cb159d42f2d",
     name: "Bakoma Satino Gold Drink",
     country_of_origin: "Poland",
     rating: 1,
@@ -70,7 +70,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576989/zmxgxrnxpst0bewgogsb.jpg",
   },
   {
-    id: 6,
+    id: "88b88111-14c1-4ceb-9c68-b5ab4b696050",
     name: "Clover Farm Chocolate Milk",
     country_of_origin: "USA",
     rating: 3,
@@ -82,7 +82,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576958/xiapt7bvgd7kbszbrano.jpg",
   },
   {
-    id: 7,
+    id: "e6f66a58-1d96-42e7-857b-346e87ea7a57",
     name: "TruMoo Chocolate Milk",
     country_of_origin: "USA",
     rating: 0,
@@ -94,7 +94,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576910/nyrbgrwz38bafhyo7qvd.jpg",
   },
   {
-    id: 8,
+    id: "f4fd7fc6-ebb2-43d8-9c08-411a4b1193ae",
     name: "Fairlife Yup Rich Chocolate",
     country_of_origin: "USA",
     rating: 2,
@@ -106,7 +106,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577038/iw5e6nyp9kfmsn2s9ztz.jpg",
   },
   {
-    id: 9,
+    id: "589f5724-2079-4164-9fd5-40123629a7b6",
     name: "McCafé Frappé Mocha",
     country_of_origin: "USA",
     rating: 3,
@@ -118,7 +118,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576953/cxyyd7ijcy0zkxipaawh.jpg",
   },
   {
-    id: 10,
+    id: "09a7a1e5-b2c5-4030-a011-076027775860",
     name: "Trickling Springs Whole Chocolate Milk",
     country_of_origin: "USA",
     rating: 3,
@@ -130,7 +130,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577015/ogvt8xyrgokdlsjxdicj.jpg",
   },
   {
-    id: 11,
+    id: "a3993d37-a07f-468a-8791-2cfd4124e72a",
     name: "United Dairy Chocolate ",
     country_of_origin: "USA",
     rating: 0,
@@ -142,7 +142,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576977/tjm6ddqlrrprlck2hmqp.jpg",
   },
   {
-    id: 12,
+    id: "700f4b31-4d9e-4d1c-850f-564bc22e66ba",
     name: "Cloverland Farms Dairy Chocolate Milk",
     country_of_origin: "USA",
     rating: 1,
@@ -154,7 +154,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577060/skl3w03grvtvyjly69ld.jpg",
   },
   {
-    id: 13,
+    id: "abef5190-df77-4663-961a-33ff7098e6c7",
     name: "Harrisburg Dairies",
     country_of_origin: "USA",
     rating: 2,
@@ -166,7 +166,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576991/vmcg5mwficp2ui83ledx.jpg",
   },
   {
-    id: 14,
+    id: "e9781bed-0af9-4568-9592-58695f9789c8",
     name: "Peet's Coffee Frapuccino Mocha",
     country_of_origin: "USA",
     rating: 2,
@@ -178,7 +178,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576897/zmmxmyuq8liai6pmzcut.jpg",
   },
   {
-    id: 15,
+    id: "a99f5d55-c8fb-408d-905f-4b9e860fe8e9",
     name: "Special K Protein Shake",
     country_of_origin: "USA",
     rating: 2,
@@ -190,7 +190,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576993/nhmib1sdu3vtpx4vu6gl.jpg",
   },
   {
-    id: 16,
+    id: "cd254818-3ea1-4ebe-b547-abb460962ed8",
     name: "Chocomel",
     country_of_origin: "The Netherlands",
     rating: 3,
@@ -202,7 +202,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576981/q7o8h9rumun074wrk1dj.jpg",
   },
   {
-    id: 17,
+    id: "aff95121-1918-4595-8e11-e028fb790afd",
     name: "Heidi Chocolat",
     country_of_origin: "Switzerland",
     rating: 3,
@@ -214,7 +214,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577042/y9pir749gevdj0creivl.jpg",
   },
   {
-    id: 18,
+    id: "00fdb05a-87e2-4dfe-acfb-8760fa1cb832",
     name: "Nutramino Nutra Go",
     country_of_origin: "Denmark",
     rating: 3,
@@ -226,7 +226,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577022/a9sn1dyizqjejnrj8hbn.jpg",
   },
   {
-    id: 19,
+    id: "a1ee497e-55b5-434a-a201-7df5b7b718a7",
     name: "Emmi Energy Milk",
     country_of_origin: "Switzerland",
     rating: 4,
@@ -238,7 +238,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576975/y0akzamhrig3ctmihtkc.jpg",
   },
   {
-    id: 20,
+    id: "0f3324e4-db51-4c79-826b-0864ddb007f0",
     name: "Comella Choco Drink",
     country_of_origin: "Switzerland",
     rating: 2,
@@ -250,19 +250,19 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576987/q5xy0objglrspvjevsp9.jpg",
   },
   {
-    id: 21,
+    id: "47ae1a1c-5674-4b98-a04e-2114d7d60088",
     name: "Três Corações Capuccino Chocolate",
     country_of_origin: "Brazil",
     rating: 5,
     description:
-      "Bom pacas! That's a Portuguese slang that means 'damn good'. It's a shame that I cannot find this drink outside Brazil. I must say it's a bit too sweet, though. Not perfect. But it's one of my favourites nevertheless!",
+      "Bom pacas! That's a Portuguese slang term that means 'damn good'. It's a shame that I cannot find this drink outside Brazil. I must say it's a bit too sweet, though. Not perfect. But it's one of my favourites nevertheless!",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576907/irealhyt3nhjgs5tzjkf.png",
   },
   {
-    id: 22,
+    id: "f569b36b-4b2e-4903-a5c9-b428c3ce42cd",
     name: "Ehrmann High Protein Chocolate Drink ",
     country_of_origin: "Germany",
     rating: 1,
@@ -274,7 +274,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577064/iext2hyynyuuk85ikoq4.jpg",
   },
   {
-    id: 23,
+    id: "3a5c8a8b-6c51-4638-9421-15a8c76e05c7",
     name: "QNT Protein Delicious Shake",
     country_of_origin: "Belgium",
     rating: 1,
@@ -286,7 +286,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1782734326/oofe0bflkbptjdfq6ut3.png",
   },
   {
-    id: 24,
+    id: "a57462ce-7304-4a96-8406-439df9d6569c",
     name: "Müllermilch Kakao",
     country_of_origin: "Germany",
     rating: 2,
@@ -298,7 +298,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576920/igm8k77pszzhlsyhbkrd.jpg",
   },
   {
-    id: 25,
+    id: "89209c1c-11f7-45ac-9c8f-7cd9fd2cd3ac",
     name: "Tine Milkshake Sjokoladesmak",
     country_of_origin: "Norway",
     rating: 4,
@@ -310,7 +310,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577009/bupfpskk87nbfbpqz00o.jpg",
   },
   {
-    id: 26,
+    id: "e1d01572-b548-4119-acee-bd735a69d05a",
     name: "ProPud Milkshake Capuccino",
     country_of_origin: "Austria",
     rating: 4,
@@ -322,7 +322,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576984/pzmrdalwhw5ntqiovrh0.jpg",
   },
   {
-    id: 27,
+    id: "154875fe-d91c-4588-a684-88e6eb7ad3d6",
     name: "Espresso House Iscapuccino Mocca",
     country_of_origin: "Sweden",
     rating: 4,
@@ -334,7 +334,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577051/fkr1dfakkmukcjuucpgi.jpg",
   },
   {
-    id: 28,
+    id: "40fd7fa7-b05a-4b93-a625-24775cdb5205",
     name: "Barbells Milkshake Chocolate",
     country_of_origin: "Sweden",
     rating: 3,
@@ -346,31 +346,31 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577057/u6pzn0771zuaotnw24ks.jpg",
   },
   {
-    id: 29,
+    id: "7dcc73b5-09c9-43d5-afcf-02701a9ae087",
     name: "Starbucks White Mocha Frapuccino",
     country_of_origin: "USA",
     rating: 5,
     description:
-      "I first discovered this one when I lived in Rio de Janeiro, in 2013. It has become my favourite Starbucks drink. But here's a crucial detail: it ought to to be ordered with less ice and a double shot of espresso. Otherwise, it can be rather boring.",
+      "I first discovered this one when I lived in Rio de Janeiro, in 2013. It has become my favourite Starbucks drink. But here's a crucial detail: it ought to be ordered with less ice and a double shot of espresso. Otherwise, it can be rather boring.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576968/x3ovj3cquzvvizclpfyf.jpg",
   },
   {
-    id: 30,
+    id: "d2511f6b-4a7e-4b5b-b01b-76fb3179337c",
     name: "Steam Kaffebar Iskremkaffe",
     country_of_origin: "Norway",
     rating: 5,
     description:
-      "A heavenly experience! This is one of my top favourites of all time. No games here, no fluff, no gimmicks. Just great-quality coffee mixed with great-quality ice cream. This brutal simplicity is what makes this drink so special. I'd recommend either vanilla, chocolate or mint ice cream. Pricey, but totally worth it. Not sure how consistent it is across different shops, though. I used to order it at Steam Kaffeebar CC Vest, in Oslo.",
+      "A heavenly experience! This is one of my top favourites of all time. No games here, no fluff, no gimmicks. Just great-quality coffee mixed with great-quality ice cream. This brutal simplicity is what makes this drink so special. I'd recommend either vanilla, chocolate or mint ice cream. Pricey, but totally worth it. Not sure how consistent it is across different shops, though. I used to order it at Steam Kaffebar CC Vest, in Oslo.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576979/w2pjos1brnmkpm5wsuqz.jpg",
   },
   {
-    id: 31,
+    id: "afb01ae8-8cbd-4548-b85a-9fd9092778fa",
     name: "Alpro Plant Protein",
     country_of_origin: "Belgium",
     rating: 1,
@@ -381,7 +381,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576905/tpjfk5nacezaqfkb3w87.jpg",
   },
   {
-    id: 32,
+    id: "cf446b25-345a-47a9-b1d3-bd109b907c26",
     name: "Skånemejerier Chokladmjölk",
     country_of_origin: "Sweden",
     rating: 4,
@@ -393,7 +393,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577067/bfj1tpicpvlmamprovvt.jpg",
   },
   {
-    id: 33,
+    id: "a5b9c6db-801f-41f3-97bb-121e5e62ea91",
     name: "Skånemejerier Fika Chokladmjölk ",
     country_of_origin: "Sweden",
     rating: 4,
@@ -405,7 +405,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576926/nc3bpivtvkriqufgrufx.jpg",
   },
   {
-    id: 33,
+    id: "5d926b50-3f9f-485a-a94d-da6a541538fd",
     name: "Pucko",
     country_of_origin: "Sweden",
     rating: 5,
@@ -417,7 +417,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577035/g2gunnmew2aj1osebma4.jpg",
   },
   {
-    id: 34,
+    id: "423bb4f6-f625-45a0-843d-dd2503d86317",
     name: "Pucko Ljus Chokladmjölk",
     country_of_origin: "Sweden",
     rating: 3,
@@ -429,7 +429,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577003/sfvxqpae2zptnt3ye6zu.jpg",
   },
   {
-    id: 35,
+    id: "3ee6ada6-ee75-4a00-b5b8-7ad3efce8179",
     name: "Milbona Cappuccino Coffee Drink",
     country_of_origin: "Germany",
     rating: 5,
@@ -441,7 +441,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576970/ihlmvm6ewv07bnpsblph.jpg",
   },
   {
-    id: 36,
+    id: "78ea75be-df24-4a3f-bf91-99a2613f497e",
     name: "Yalla Milkshake",
     country_of_origin: "Sweden",
     rating: 4,
@@ -453,7 +453,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577013/clllllbgys6mah1ylek1.jpg",
   },
   {
-    id: 37,
+    id: "4e23fdee-7651-40eb-8853-956095d864ee",
     name: "Milbona Espresso Macchiato Coffee Drink",
     country_of_origin: "Germany",
     rating: 5,
@@ -465,7 +465,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576898/l0qiwjpd4hjy830nqw1j.jpg",
   },
   {
-    id: 38,
+    id: "d684c352-f05b-4aad-a8ac-5ac29dfe44e0",
     name: "ProPud Coffee Shake Frappé Latte",
     country_of_origin: "Sweden",
     rating: 5,
@@ -477,7 +477,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576974/tgzxgcz3xnz5hkhvydgr.jpg",
   },
   {
-    id: 39,
+    id: "b590de4c-25f7-44cb-b5a0-2e6d38ada22f",
     name: "Naturdiet Creamy Caffe Latte",
     country_of_origin: "Sweden",
     rating: 0,
@@ -489,7 +489,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577011/zhfxr8v5na1z0hkccgbg.jpg",
   },
   {
-    id: 40,
+    id: "fc5ad0ee-5f66-427c-a850-2ce4c3e1c249",
     name: "Valio Profeel Protein Milkshake Chocolate Flavour",
     country_of_origin: "Finland",
     rating: 4,
@@ -501,7 +501,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576924/yknolasmyu2u1levyezp.jpg",
   },
   {
-    id: 41,
+    id: "3bf90ba1-5c1c-4820-ba0d-75ba07e935ca",
     name: "Barbells Fast Food Chocolate Flavor",
     country_of_origin: "Sweden",
     rating: 2,
@@ -513,7 +513,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576903/e3z4xe3mqg8vxzgfgbqe.jpg",
   },
   {
-    id: 42,
+    id: "377adce4-d504-4b45-b7d7-e681e5dd09b4",
     name: "Bröd & Salt Iced Shaken Espresso",
     country_of_origin: "Sweden",
     rating: 5,
@@ -525,19 +525,19 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577071/v8se8ayd74eiyivjee8v.jpg",
   },
   {
-    id: 43,
+    id: "56d0ba24-9775-4f6a-b619-ec82d5050216",
     name: "Huel Chocolate",
     country_of_origin: "UK",
     rating: 3,
     description:
-      "I wanted to give it 4 stars instead of 3, given it's nutritional properties. However, the medicine taste of this drink is a major turn-off. But still, it's a decent contender in its category.",
+      "I wanted to give it 4 stars instead of 3, given its nutritional properties. However, the medicine taste of this drink is a major turn-off. But still, it's a decent contender in its category.",
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576956/bknud8om2z4a8f56zhps.jpg",
   },
   {
-    id: 44,
+    id: "968779fa-3b74-41e7-81da-9683b78cec6c",
     name: "Tine Lettmelk Sjokolade",
     country_of_origin: "Norway",
     rating: 4,
@@ -549,7 +549,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576900/vqu8gsyccvh5nzdefray.jpg",
   },
   {
-    id: 45,
+    id: "8ece98cf-a770-479d-b1f1-d38dc00b607e",
     name: "Litago Dobbel Sjokolade",
     country_of_origin: "Norway",
     rating: 4,
@@ -561,7 +561,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577000/nryzac4wv0eo0scwuuvr.jpg",
   },
   {
-    id: 46,
+    id: "9d4981ce-badb-4ff5-a7a7-7dd400b0925f",
     name: "Ikea Oat Drink Chocolate Flavour",
     country_of_origin: "Sweden",
     rating: 4,
@@ -573,7 +573,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576972/adbedaxl0qhgav7iiosr.jpg",
   },
   {
-    id: 47,
+    id: "bf00128e-7019-46e9-862f-3a160c941040",
     name: "Kaffebrenneriet Iskrem Mocca",
     country_of_origin: "Norway",
     rating: 5,
@@ -585,7 +585,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577044/ojx6ijdahqypncff9yxl.jpg",
   },
   {
-    id: 48,
+    id: "63b67898-a687-4ad2-bc52-b70bf341936a",
     name: "Bakoma Satino Coffee Espresso",
     country_of_origin: "Poland",
     rating: 4,
@@ -597,19 +597,19 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577038/s6n8ljzwaacsbnvrlw94.jpg",
   },
   {
-    id: 49,
+    id: "4d9c61cf-1d7e-4c8f-bffa-c3a11514ae74",
     name: "Milka Shake",
     country_of_origin: "Switzerland",
     rating: 4,
     description:
-      "Delicious, as expected. Milka products hardly disappoints us. I'm not sure how consistent they are across countries, though, considering that they have several production plants in a few different territories. This one was bought in Tenerife. I can safely recommend it.",
+      "Delicious, as expected. Milka products hardly disappoint us. I'm not sure how consistent they are across countries, though, considering that they have several production plants in a few different territories. This one was bought in Tenerife. I can safely recommend it.",
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576997/tupfvn0kyl37klsuzfw8.jpg",
   },
   {
-    id: 50,
+    id: "4e819e47-1d9b-4ef7-83ad-94406629fc68",
     name: "Cappuccino Kaiku Caffè Latte",
     country_of_origin: "Spain",
     rating: 3,
@@ -621,31 +621,31 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577004/vl1n4ihooznwotkagd38.jpg",
   },
   {
-    id: 51,
+    id: "31a1cdf1-88cb-4e16-a8c9-8e3d5e9dc04f",
     name: "Okey Choco Ride",
     country_of_origin: "Lithuania",
     rating: 1,
     description:
-      "Regrets are a natural occurence of life, just as much as joy and sorrow. I was at this gas station in Tenerife, chosing from a variety of possible drinks that could help me get through that hot, sunny day. Why did I pick the worst option? I'm not sure how the others would have tasted like, of course, but it's hard to beat this \"Okey\" thing – a terrible name, to begin with. I can assure that this is one of the worst chocolate drinks I've tasted so far. It's just sugar.",
+      "Regrets are a natural occurrence of life, just as much as joy and sorrow. I was at this gas station in Tenerife, choosing from a variety of possible drinks that could help me get through that hot, sunny day. Why did I pick the worst option? I'm not sure how the others would have tasted like, of course, but it's hard to beat this \"Okey\" thing – a terrible name, to begin with. I can assure that this is one of the worst chocolate drinks I've tasted so far. It's just sugar.",
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577040/ycxsz0iw4r3rkqyhjntv.jpg",
   },
   {
-    id: 52,
+    id: "f588a7ba-4dd0-4330-8524-3fa9f94b088a",
     name: "Kalise Café & Leche Cappuccino",
     country_of_origin: "Spain",
     rating: 2,
     description:
-      "Where's the taste? I can't feel anything. What a waste of time and money this drink was. Not the the local competitors were much better, but I'm sure the manufacturers can come up with something better than this.",
+      "Where's the taste? I can't feel anything. What a waste of time and money this drink was. Not that the local competitors were much better, but I'm sure the manufacturers can come up with something better than this.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576985/slh5zt1af8zyei2tc9ks.jpg",
   },
   {
-    id: 53,
+    id: "01fd5e98-8f94-4ff4-be2f-9edfed8156d8",
     name: "Alpro Almond Plant-based Baristas Caffé",
     country_of_origin: "Belgium",
     rating: 3,
@@ -657,7 +657,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577047/mpoiu16sh3ooazq0hgaq.jpg",
   },
   {
-    id: 54,
+    id: "1e5bfb5e-92d4-45c2-8ac6-62ce2948c291",
     name: "Rørosmeieriet Økologist Ferst Sjokomjølk",
     country_of_origin: "Norway",
     rating: 3,
@@ -669,7 +669,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577025/yygckkv5mp5ui7kpuase.jpg",
   },
   {
-    id: 55,
+    id: "df94f46a-9f3f-468f-80dd-5820dd7daf42",
     name: "Choco Milk Classic",
     country_of_origin: "Denmark",
     rating: 3,
@@ -681,7 +681,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576917/tidge74q8acioic60ohk.jpg",
   },
   {
-    id: 56,
+    id: "4d5f4d3e-a1de-48ed-afd5-742d89fad1bb",
     name: "Korean brand of ice coffee",
     country_of_origin: "South Korea",
     rating: 4,
@@ -693,19 +693,19 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577073/tyrp60kghoin6qgtbkdf.jpg",
   },
   {
-    id: 57,
+    id: "746d7f24-1dde-4b18-8deb-e661630073e4",
     name: "Alpro Iced Coffee Nutty Almond",
     country_of_origin: "Belgium",
     rating: 3,
     description:
-      "Boring. I've reviewed several Alpro drink and none of them have impressed me. Mid-range quality. Not terrible, not great. I wouldn't buy it again unless I really had to.",
+      "Boring. I've reviewed several Alpro drinks and none of them have impressed me. Mid-range quality. Not terrible, not great. I wouldn't buy it again unless I really had to.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1782895318/copy_of_veifvnjrkpn2265zzqjs.jpg",
   },
   {
-    id: 58,
+    id: "093fafc0-1847-42da-9c03-f6b0c0c1e4cb",
     name: "Arla Protein Chocolate Flavoured Milk Drink",
     country_of_origin: "Denmark",
     rating: 2,
@@ -717,7 +717,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576960/b8z0pkqo1vogjhka8oqq.jpg",
   },
   {
-    id: 59,
+    id: "2633fefa-d5d3-483a-88ef-c96ecd14c215",
     name: 'The Bakery "Improvised" Frapuccino',
     country_of_origin: "Norway",
     rating: 4,
@@ -729,7 +729,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576915/fuz87qpv4gcfoziepzk6.jpg",
   },
   {
-    id: 60,
+    id: "d688149d-daf5-4ff2-80f0-f90613308127",
     name: "Alpro Iced Coffee Caramel Flavour Soya",
     country_of_origin: "Belgium",
     rating: 2,
@@ -741,7 +741,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576929/zocekrenmgzojnlgxxjb.jpg",
   },
   {
-    id: 61,
+    id: "2ea5948a-c101-4bb8-bb84-ae0805bbede2",
     name: "Protein Lab Protein Shake Chocolate Flavour",
     country_of_origin: "Denmark",
     rating: 4,
@@ -753,7 +753,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576964/chrlvsvkovrfieyrcdvd.jpg",
   },
   {
-    id: 62,
+    id: "e3de4389-7a92-46ad-9bcf-c1bacb71c54e",
     name: "Tine Milkshake Sjokoladesmak",
     country_of_origin: "Norway",
     rating: 4,
@@ -765,43 +765,43 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576962/mjxvnqvjigz8uzv5stjx.jpg",
   },
   {
-    id: 63,
+    id: "e6fe4373-c839-4d15-ae36-e4e9046ffd6f",
     name: "Kolonihagen Mocca Latte",
     country_of_origin: "Norway",
     rating: 4,
     description:
-      "This drink has accompanied me in many a journey. It belongs to that category of drinks that you can always rely on. Easy to spot the coffee notes. Smooth texture. Pleasang packaging that doesn't get in the way. I'm happy with this one.",
+      "This drink has accompanied me in many a journey. It belongs to that category of drinks that you can always rely on. Easy to spot the coffee notes. Smooth texture. Pleasant packaging that doesn't get in the way. I'm happy with this one.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576918/o7or03ohlglaosoijets.jpg",
   },
   {
-    id: 64,
+    id: "67da39b0-e841-4c99-bede-56f73f23bd21",
     name: "Erikstad Gaard Sjokomjølk",
     country_of_origin: "Norway",
     rating: 4,
     description:
-      "I'll admit that this is a very good drink, even though I found its texture way too thin. Why not make it a little thicker? That's what chocolate milk drinkers expect. A chocolate drink that feels like water is not exacly the way to go, in my humble opinion.",
+      "I'll admit that this is a very good drink, even though I found its texture way too thin. Why not make it a little thicker? That's what chocolate milk drinkers expect. A chocolate drink that feels like water is not exactly the way to go, in my humble opinion.",
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576995/qwx9uierspresdcddxnh.jpg",
   },
   {
-    id: 65,
+    id: "11fbfeff-2ef0-404a-bf69-32dad7a7f8bb",
     name: "Monday & Espresso Iskaffe",
     country_of_origin: "Norway",
     rating: 3,
     description:
-      "I does the job. Nothing spectacular, but it will get you going in the morning. It's a very cheap drink, compared to its competitors. Nice to have a budget option that is actually quite drinkable.",
+      "It does the job. Nothing spectacular, but it will get you going in the morning. It's a very cheap drink, compared to its competitors. Nice to have a budget option that is actually quite drinkable.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577053/wyz4enimshycjsjtea6p.jpg",
   },
   {
-    id: 66,
+    id: "44da1d6a-42bf-453c-9ff3-36c141d353df",
     name: "Nescafé Pro Energy Capuccino Clássico",
     country_of_origin: "Brazil",
     rating: 4,
@@ -813,7 +813,7 @@ export let chocolateMilkList = [
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576999/jzwaytrtqzsgpncgbxbz.jpg",
   },
   {
-    id: 67,
+    id: "fbe5b53b-2a18-4397-9a7c-5b29f8a591f5",
     name: "Oslo Cold Brew Iskaffe Havre",
     country_of_origin: "Norway",
     rating: 0,
