@@ -593,7 +593,8 @@ export let chocolateMilkList = [
       "An uncomplicated drink. Simple, straight to the point. No distractions. I liked it very much, particularly for its distinctive coffee taste. Hard to find in regular shops, though. I found this one at Eko, in Grünerløkka, a small market that specialises in Polish products.",
     contains_coffee: true,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577038/s6n8ljzwaacsbnvrlw94.jpg",
   },
   {
     id: 49,
@@ -634,9 +635,10 @@ export let chocolateMilkList = [
   {
     id: 52,
     name: "Kalise Café & Leche Cappuccino",
-    country_of_origin: "XXXXXx",
-    rating: 3,
-    description: "Almost tasteless.",
+    country_of_origin: "Spain",
+    rating: 2,
+    description:
+      "Where's the taste? I can't feel anything. What a waste of time and money this drink was. Not the the local competitors were much better, but I'm sure the manufacturers can come up with something better than this.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
@@ -644,8 +646,8 @@ export let chocolateMilkList = [
   },
   {
     id: 53,
-    name: "Alpro Almond Plant-based Baristas CAffé",
-    country_of_origin: "XXXXXx",
+    name: "Alpro Almond Plant-based Baristas Caffé",
+    country_of_origin: "Belgium",
     rating: 3,
     description:
       "I do enjoy almond milk. This drink is not something that will cause a lasting impression on your taste buds. But it's not bad at all. I've tried other drinks from this brand, and they're usually awful. Not this one, though. Which doesn't mean, of course, that it's getting any higher than 3 points in my 1-5 scale.",
@@ -657,7 +659,7 @@ export let chocolateMilkList = [
   {
     id: 54,
     name: "Rørosmeieriet Økologist Ferst Sjokomjølk",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Norway",
     rating: 3,
     description:
       "I hesitated to give it 3 points. Maybe 4? Nah. It's not a bad drink, but it's not great either. This is generally considered a very good brand for Scandinavian standards, so I think they could do a better job at producing a chocolate milk drink that lives up to their reputation",
@@ -693,7 +695,7 @@ export let chocolateMilkList = [
   {
     id: 57,
     name: "Alpro Iced Coffee Nutty Almond",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Belgium",
     rating: 3,
     description:
       "Boring. I've reviewed several Alpro drink and none of them have impressed me. Mid-range quality. Not terrible, not great. I wouldn't buy it again unless I really had to.",
@@ -705,9 +707,10 @@ export let chocolateMilkList = [
   {
     id: 58,
     name: "Arla Protein Chocolate Flavoured Milk Drink",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Denmark",
     rating: 2,
-    description: "No taste.",
+    description:
+      "No taste. I think I had tried something else produced by this brand before, and regretted it of course. This time it was no different. I think this is the last Arla chocolate drink I will ever waste money on.",
     contains_coffee: false,
     is_hot_chocolate: false,
     image:
@@ -728,7 +731,7 @@ export let chocolateMilkList = [
   {
     id: 60,
     name: "Alpro Iced Coffee Caramel Flavour Soya",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Belgium",
     rating: 2,
     description:
       "I hate caramel. I hate soy milk. So why did I even try this one? No idea. But I'm being very generous here by giving it a 2/5 rating. Trying to be unbiased. But seriously, this was so boring and uninspiring.",
@@ -740,7 +743,7 @@ export let chocolateMilkList = [
   {
     id: 61,
     name: "Protein Lab Protein Shake Chocolate Flavour",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Denmark",
     rating: 4,
     description:
       "Not too sweet. Good stuff. It doesn't taste like medicine either, like most of the drinks in this category. I found it gentle and balanced. Would drink it again.",
@@ -764,9 +767,10 @@ export let chocolateMilkList = [
   {
     id: 63,
     name: "Kolonihagen Mocca Latte",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Norway",
     rating: 4,
-    description: "XXXXXXXXX",
+    description:
+      "This drink has accompanied me in many a journey. It belongs to that category of drinks that you can always rely on. Easy to spot the coffee notes. Smooth texture. Pleasang packaging that doesn't get in the way. I'm happy with this one.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
@@ -775,7 +779,7 @@ export let chocolateMilkList = [
   {
     id: 64,
     name: "Erikstad Gaard Sjokomjølk",
-    country_of_origin: "XXXXXx",
+    country_of_origin: "Norway",
     rating: 4,
     description:
       "I'll admit that this is a very good drink, even though I found its texture way too thin. Why not make it a little thicker? That's what chocolate milk drinkers expect. A chocolate drink that feels like water is not exacly the way to go, in my humble opinion.",
@@ -787,9 +791,10 @@ export let chocolateMilkList = [
   {
     id: 65,
     name: "Monday & Espresso Iskaffe",
-    country_of_origin: "XXXXXx",
-    rating: 4,
-    description: "XXXXXXXXX",
+    country_of_origin: "Norway",
+    rating: 3,
+    description:
+      "I does the job. Nothing spectacular, but it will get you going in the morning. It's a very cheap drink, compared to its competitors. Nice to have a budget option that is actually quite drinkable.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
@@ -813,7 +818,7 @@ export let chocolateMilkList = [
     country_of_origin: "Norway",
     rating: 0,
     description:
-      "Stay away from it. This is one of the worst things I've ever drunk. I'd have to make a conscious effort to find the right adjectives to accuretely describe how bad this tastes. I'd need to resort to metaphors or comparisons: horse urine, sheep piss, garbage leak, sewage material... But I won't do that. The worst part: it's an expensive drink! ",
+      "Stay away from it. This is one of the worst things I've ever drunk. I'd have to make a conscious effort to find the right adjectives to describe how bad this tastes. I'd need to resort to metaphors or analogies: horse urine, sheep piss, leaking garbage, raw sewage... But I won't do that. The worst part: it's an expensive drink! ",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
