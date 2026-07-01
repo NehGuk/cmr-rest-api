@@ -66,10 +66,8 @@ export const getChocolateMilkById = (
   res: Response<ChocolateMilk | { message: string }>
 ) => {
   const { id } = req.params
-  const parsedId = Number(id)
-  const foundChocolateMilk = chocolateMilkList.find(
-    (item) => item.id === parsedId
-  )
+
+  const foundChocolateMilk = chocolateMilkList.find((item) => item.id === id)
 
   if (!foundChocolateMilk) {
     return res.status(404).json({ message: "Chocolate milk ID not found." })
