@@ -33,4 +33,4 @@ Examples:
 
 ## Deployed frontend
 
-- A sample frontend to display this data has been deployed at https://nehguk.github.io/kodehode-jsa-oppgave-3/index.html.
+- A sample frontend to display this data has been deployed at https://nehguk.github.io/cmr/index.html.
