@@ -578,90 +578,245 @@ export let chocolateMilkList = [
     country_of_origin: "Norway",
     rating: 5,
     description:
-      "Perfection! This very drink is one of the reasons why I miss Oslo. Kaffebrenneriet, a local shop, is known for good quality stuff. But this drink went beyond my expectations. I think it's just the brutal simplicity of if that strikes me the most: great coffee with excellent-quality ice cream. What can go wrong? Saint-Exupéry once said that perfection is achieved not when there is nothing more to add, but when there is nothing more to take away. This drink epitomises that philosophy pretty well.",
+      "Perfection! This very drink is one of the reasons why I miss Oslo. Kaffebrenneriet, a local shop, is known for good quality stuff. But this drink went beyond my expectations. I think it's just the brutal simplicity of it that strikes me the most: great coffee with excellent-quality ice cream. What can go wrong? Saint-Exupéry once said that perfection is achieved not when there is nothing more to add, but when there is nothing more to take away. This drink epitomises that philosophy.",
     contains_coffee: true,
     is_hot_chocolate: false,
     image:
       "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577044/ojx6ijdahqypncff9yxl.jpg",
-  } /*,
+  },
   {
-    id: 111111111,
-    name: "XXXXXX",
-    country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
-    contains_coffee: false,
+    id: 48,
+    name: "Bakoma Satino Coffee Espresso",
+    country_of_origin: "Poland",
+    rating: 4,
+    description:
+      "An uncomplicated drink. Simple, straight to the point. No distractions. I liked it very much, particularly for its distinctive coffee taste. Hard to find in regular shops, though. I found this one at Eko, in Grünerløkka, a small market that specialises in Polish products.",
+    contains_coffee: true,
     is_hot_chocolate: false,
     image: "XXXXXX",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
-    country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
+    id: 49,
+    name: "Milka Shake",
+    country_of_origin: "Switzerland",
+    rating: 4,
+    description:
+      "Delicious, as expected. Milka products hardly disappoints us. I'm not sure how consistent they are across countries, though, considering that they have several production plants in a few different territories. This one was bought in Tenerife. I can safely recommend it.",
     contains_coffee: false,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576997/tupfvn0kyl37klsuzfw8.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
-    country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
-    contains_coffee: false,
+    id: 50,
+    name: "Cappuccino Kaiku Caffè Latte",
+    country_of_origin: "Spain",
+    rating: 3,
+    description:
+      'Spanish brand, made in Switzerland. It\'s not bad, but I expected more from this drink. I\'d still drink it again, but there are better options on the market. The naming philosophy bothered me quite a bit. Look at the label: a "cappuccino" that is also a "caffè latte"? What?',
+    contains_coffee: true,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577004/vl1n4ihooznwotkagd38.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
-    country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
+    id: 51,
+    name: "Okey Choco Ride",
+    country_of_origin: "Lithuania",
+    rating: 1,
+    description:
+      "Regrets are a natural occurence of life, just as much as joy and sorrow. I was at this gas station in Tenerife, chosing from a variety of possible drinks that could help me get through that hot, sunny day. Why did I pick the worst option? I'm not sure how the others would have tasted like, of course, but it's hard to beat this \"Okey\" thing – a terrible name, to begin with. I can assure that this is one of the worst chocolate drinks I've tasted so far. It's just sugar.",
     contains_coffee: false,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577040/ycxsz0iw4r3rkqyhjntv.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
+    id: 52,
+    name: "Kalise Café & Leche Cappuccino",
     country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
-    contains_coffee: false,
+    rating: 3,
+    description: "Almost tasteless.",
+    contains_coffee: true,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576985/slh5zt1af8zyei2tc9ks.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
+    id: 53,
+    name: "Alpro Almond Plant-based Baristas CAffé",
     country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
-    contains_coffee: false,
+    rating: 3,
+    description:
+      "I do enjoy almond milk. This drink is not something that will cause a lasting impression on your taste buds. But it's not bad at all. I've tried other drinks from this brand, and they're usually awful. Not this one, though. Which doesn't mean, of course, that it's getting any higher than 3 points in my 1-5 scale.",
+    contains_coffee: true,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577047/mpoiu16sh3ooazq0hgaq.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
+    id: 54,
+    name: "Rørosmeieriet Økologist Ferst Sjokomjølk",
     country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
+    rating: 3,
+    description:
+      "I hesitated to give it 3 points. Maybe 4? Nah. It's not a bad drink, but it's not great either. This is generally considered a very good brand for Scandinavian standards, so I think they could do a better job at producing a chocolate milk drink that lives up to their reputation",
     contains_coffee: false,
     is_hot_chocolate: false,
-    image: "XXXXXX",
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577025/yygckkv5mp5ui7kpuase.jpg",
   },
   {
-    id: 111111111,
-    name: "XXXXXX",
-    country_of_origin: "XXXXXx",
-    rating: 111111,
-    description: "XXXXXXXXX",
+    id: 55,
+    name: "Choco Milk Classic",
+    country_of_origin: "Denmark",
+    rating: 3,
+    description:
+      "Actually pretty good, but way too sweet. They seem to be trying to copy Cocio. Good try. But it will take more than excess of sugar to beat the Danish champion.",
     contains_coffee: false,
     is_hot_chocolate: false,
-    image: "XXXXXX",
-  }, */,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576917/tidge74q8acioic60ohk.jpg",
+  },
+  {
+    id: 56,
+    name: "Korean brand of ice coffee",
+    country_of_origin: "South Korea",
+    rating: 4,
+    description:
+      "Quite nice! I wish it was a little less sweet, but it is a solid choice if you are in the mood for a cold drink.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577073/tyrp60kghoin6qgtbkdf.jpg",
+  },
+  {
+    id: 57,
+    name: "Alpro Iced Coffee Nutty Almond",
+    country_of_origin: "XXXXXx",
+    rating: 3,
+    description:
+      "Boring. I've reviewed several Alpro drink and none of them have impressed me. Mid-range quality. Not terrible, not great. I wouldn't buy it again unless I really had to.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1782895318/copy_of_veifvnjrkpn2265zzqjs.jpg",
+  },
+  {
+    id: 58,
+    name: "Arla Protein Chocolate Flavoured Milk Drink",
+    country_of_origin: "XXXXXx",
+    rating: 2,
+    description: "No taste.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576960/b8z0pkqo1vogjhka8oqq.jpg",
+  },
+  {
+    id: 59,
+    name: 'The Bakery "Improvised" Frapuccino',
+    country_of_origin: "Norway",
+    rating: 4,
+    description:
+      "I was hanging out in this boring office building, in Fornebu, and found a coffee place there. The menu sadly didn't have any cold options. But a nice lady who worked there said that she could improvise something. And this was the result. A frapuccino-like drink, with loads of good chocolate and a bit of cream on top. It tasted good! The attitude of the attendant helped this drink get a 4/5 rating.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576915/fuz87qpv4gcfoziepzk6.jpg",
+  },
+  {
+    id: 60,
+    name: "Alpro Iced Coffee Caramel Flavour Soya",
+    country_of_origin: "XXXXXx",
+    rating: 2,
+    description:
+      "I hate caramel. I hate soy milk. So why did I even try this one? No idea. But I'm being very generous here by giving it a 2/5 rating. Trying to be unbiased. But seriously, this was so boring and uninspiring.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576929/zocekrenmgzojnlgxxjb.jpg",
+  },
+  {
+    id: 61,
+    name: "Protein Lab Protein Shake Chocolate Flavour",
+    country_of_origin: "XXXXXx",
+    rating: 4,
+    description:
+      "Not too sweet. Good stuff. It doesn't taste like medicine either, like most of the drinks in this category. I found it gentle and balanced. Would drink it again.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576964/chrlvsvkovrfieyrcdvd.jpg",
+  },
+  {
+    id: 62,
+    name: "Tine Milkshake Sjokoladesmak",
+    country_of_origin: "Norway",
+    rating: 4,
+    description:
+      "Although it's a bit too sweet, it's still a very good chocolate milk drink. I would recommend it, if you're not too worried about your sugar intake.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576962/mjxvnqvjigz8uzv5stjx.jpg",
+  },
+  {
+    id: 63,
+    name: "Kolonihagen Mocca Latte",
+    country_of_origin: "XXXXXx",
+    rating: 4,
+    description: "XXXXXXXXX",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576918/o7or03ohlglaosoijets.jpg",
+  },
+  {
+    id: 64,
+    name: "Erikstad Gaard Sjokomjølk",
+    country_of_origin: "XXXXXx",
+    rating: 4,
+    description:
+      "I'll admit that this is a very good drink, even though I found its texture way too thin. Why not make it a little thicker? That's what chocolate milk drinkers expect. A chocolate drink that feels like water is not exacly the way to go, in my humble opinion.",
+    contains_coffee: false,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576995/qwx9uierspresdcddxnh.jpg",
+  },
+  {
+    id: 65,
+    name: "Monday & Espresso Iskaffe",
+    country_of_origin: "XXXXXx",
+    rating: 4,
+    description: "XXXXXXXXX",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577053/wyz4enimshycjsjtea6p.jpg",
+  },
+  {
+    id: 66,
+    name: "Nescafé Pro Energy Capuccino Clássico",
+    country_of_origin: "Brazil",
+    rating: 4,
+    description:
+      "I'd give it a 5/5, if it was a little less sweet. But it's still a fantastic drink, like all the others from this same product line.",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771576999/jzwaytrtqzsgpncgbxbz.jpg",
+  },
+  {
+    id: 67,
+    name: "Oslo Cold Brew Iskaffe Havre",
+    country_of_origin: "Norway",
+    rating: 0,
+    description:
+      "Stay away from it. This is one of the worst things I've ever drunk. I'd have to make a conscious effort to find the right adjectives to accuretely describe how bad this tastes. I'd need to resort to metaphors or comparisons: horse urine, sheep piss, garbage leak, sewage material... But I won't do that. The worst part: it's an expensive drink! ",
+    contains_coffee: true,
+    is_hot_chocolate: false,
+    image:
+      "https://res.cloudinary.com/dtft3fqjw/image/upload/v1771577007/ppwiqkcxtv06r0adzcxl.jpg",
+  },
 ]
