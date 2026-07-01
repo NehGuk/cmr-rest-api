@@ -106,7 +106,7 @@ export const validateIsHotChocolate = (
 
 export const validateID = (req: Request, res: Response, next: NextFunction) => {
   const { id } = req.params
-  if (isNaN(Number(id)) || Number(id) <= 0) {
+  if (typeof id !== "string") {
     return res.status(400).json({ message: "ID must be a valid number" })
   }
   next()
