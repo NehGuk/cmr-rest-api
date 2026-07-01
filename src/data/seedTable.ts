@@ -10,11 +10,12 @@ export function seedTable() {
     db.exec("BEGIN TRANSACTION")
 
     const insert = db.prepare(`
-      INSERT INTO cmr (name, country_of_origin, rating, description, contains_coffee, is_hot_chocolate, image)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO cmr (id, name, country_of_origin, rating, description, contains_coffee, is_hot_chocolate, image)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `)
 
     for (const {
+      id,
       name,
       country_of_origin,
       rating,
@@ -24,6 +25,7 @@ export function seedTable() {
       image,
     } of chocolateMilkList) {
       insert.run(
+        id,
         name,
         country_of_origin,
         rating,

@@ -8,7 +8,7 @@ export function createTable() {
 
   db.exec(`
     CREATE TABLE IF NOT EXISTS cmr (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
       description TEXT,
       country_of_origin TEXT NOT NULL,
